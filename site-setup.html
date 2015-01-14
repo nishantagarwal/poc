@@ -16,6 +16,7 @@
             overflow: hidden;
         }
     </style>
+    <link href="css/form.css" rel="stylesheet" />
 </head>
 <body>
     <!-- Your site -->
@@ -73,47 +74,94 @@
             <br />
             If yes, simply fill in this questionnaire.</p>
         <!-- App Form Starts -->
-        <div class="panel panel-default">
-            <form id="msform">
+        <div class="panel panel-default form-panel">
+            <form id="msform" class="form-horizontal">
             <!-- progressbar -->
             <ul id="progressbar">
-                <li class="active">Account Setup</li>
-                <li>Social Profiles</li>
-                <li>Personal Details</li>
+                <li class="active">Stack</li>
+                <li>Basic Details</li>
+                <li>Advanced Details</li>
+                <li>Confirmation</li>
             </ul>
             <!-- fieldsets -->
             <fieldset>
                 <h2 class="fs-title">
-                    Create your account</h2>
+                    Stack</h2>
                 <h3 class="fs-subtitle">
-                    This is step 1</h3>
-                <input type="text" name="email" placeholder="Email" />
-                <input type="password" name="pass" placeholder="Password" />
-                <input type="password" name="cpass" placeholder="Confirm Password" />
-                <input type="button" name="next" class="next action-button" value="Next" />
+                    Select Technology</h3>
+                <div class="form-group">
+                    <div class="radio radio-primary">
+                        <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">.Net
+                        </label>
+                    </div>
+                    <div class="radio radio-primary">
+                        <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">LAMP
+                        </label>
+                    </div>
+                </div>
+                <input type="button" name="next" class="next action-button btn btn-primary" value="Next" />
             </fieldset>
             <fieldset>
                 <h2 class="fs-title">
-                    Social Profiles</h2>
+                    Basic Details</h2>
                 <h3 class="fs-subtitle">
-                    Your presence on the social network</h3>
-                <input type="text" name="twitter" placeholder="Twitter" />
-                <input type="text" name="facebook" placeholder="Facebook" />
-                <input type="text" name="gplus" placeholder="Google Plus" />
-                <input type="button" name="previous" class="previous action-button" value="Previous" />
-                <input type="button" name="next" class="next action-button" value="Next" />
+                    Enter basic details about the new site.</h3>
+                <div class="form-group">
+                    <label for="domain" class="col-lg-2 control-label">
+                        Top Level Domain:</label>
+                    <div class="col-lg-10">
+                        <input type="text" class="form-control" id="Text1" placeholder="www.example.com">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="region" class="col-lg-2 control-label">
+                        Region:</label>
+                    <div class="col-lg-10">
+                        <select class="form-control" id="region">
+                            <option>AP</option>
+                            <option>EU</option>
+                            <option>LA</option>
+                            <option>NA</option>
+                            <option>MEA</option>
+                        </select>
+                    </div>
+                </div>
+                <input type="button" name="previous" class="previous action-button btn btn-primary"
+                    value="Previous" />
+                <input type="button" name="next" class="next action-button btn btn-primary" value="Next" />
             </fieldset>
             <fieldset>
                 <h2 class="fs-title">
-                    Personal Details</h2>
+                    Advanced Details</h2>
                 <h3 class="fs-subtitle">
-                    We will never sell it</h3>
-                <input type="text" name="fname" placeholder="First Name" />
-                <input type="text" name="lname" placeholder="Last Name" />
-                <input type="text" name="phone" placeholder="Phone" />
-                <textarea name="address" placeholder="Address"></textarea>
-                <input type="button" name="previous" class="previous action-button" value="Previous" />
-                <input type="submit" name="submit" class="submit action-button" value="Submit" />
+                    Provide some more details about the new site.</h3>
+                <div class="form-group">
+                    <label for="ssl" class="col-lg-2 control-label">
+                        Require SSL:</label>
+                    <div class="col-lg-10">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox">
+                                Yes
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <input type="button" name="previous" class="previous action-button btn btn-primary"
+                    value="Previous" />
+                <input type="button" name="next" class="next action-button btn btn-primary" value="Next" />
+            </fieldset>
+            <fieldset>
+                <h2 class="fs-title">
+                    Confirmation</h2>
+                <h3 class="fs-subtitle">
+                    Please review the details of new site.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <input type="button" name="previous" class="previous action-button btn btn-primary"
+                    value="Previous" />
+                <input type="submit" name="submit" class="submit action-button btn btn-primary" value="Submit" />
             </fieldset>
             </form>
         </div>
@@ -130,6 +178,7 @@
             $.material.init();
         });
     </script>
-    <script type="text/javascript" src="js/core.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="js/multiform.js"></script>
 </body>
 </html>

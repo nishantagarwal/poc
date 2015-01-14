@@ -5,31 +5,137 @@
     <link href="css/ripples.min.css" rel="stylesheet" />
     <link href="css/material-wfont.min.css" rel="stylesheet" />
     <title>POC</title>
+    <style type="text/css">
+        #wrapper
+        {
+            padding: 40px;
+        }
+        .apps-list
+        {
+            overflow: hidden;
+        }
+    </style>
 </head>
 <body>
     <!-- Your site -->
-    <h1>
-        You can add your site here.</h1>
-    <h2>
-        To ensure that material-design theme is working, check out the buttons below.</h2>
-    <h3 class="text-muted">
-        If you can see the ripple effect on clicking them, then you are good to go!</h3>
-    <p class="bs-component">
-        <a href="javascript:void(0)" class="btn btn-default">Default</a> <a href="javascript:void(0)"
-            class="btn btn-primary">Primary</a> <a href="javascript:void(0)" class="btn btn-success">
-                Success</a> <a href="javascript:void(0)" class="btn btn-info">Info</a> <a href="javascript:void(0)"
-                    class="btn btn-warning">Warning</a> <a href="javascript:void(0)" class="btn btn-danger">
-                        Danger</a> <a href="javascript:void(0)" class="btn btn-link">Link</a>
-    </p>
+    <!-- Navigation Starts-->
+    <div class="navbar navbar-default">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar">
+                </span>
+            </button>
+            <a class="navbar-brand" href="javascript:void(0)">Brand</a>
+        </div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="javascript:void(0)">Active</a></li>
+                <li><a href="javascript:void(0)">Link</a></li>
+                <li class="dropdown"><a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
+                    Dropdown <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="javascript:void(0)">Action</a></li>
+                        <li><a href="javascript:void(0)">Another action</a></li>
+                        <li><a href="javascript:void(0)">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Dropdown header</li>
+                        <li><a href="javascript:void(0)">Separated link</a></li>
+                        <li><a href="javascript:void(0)">One more separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-left">
+            <input type="text" class="form-control col-lg-8" placeholder="Search">
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="javascript:void(0)">Link</a></li>
+                <li class="dropdown"><a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
+                    Dropdown <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="javascript:void(0)">Action</a></li>
+                        <li><a href="javascript:void(0)">Another action</a></li>
+                        <li><a href="javascript:void(0)">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="javascript:void(0)">Separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Navigation Ends -->
+    <!-- Main Panel Starts -->
+    <div class="jumbotron" id="wrapper">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <form class="apps-form search">
+                <input type="text" class="form-control col-lg-8 search" placeholder="Search" data-list="apps-list" />
+                </form>
+            </div>
+        </div>
+        <div class="list-group apps-list" id="apps-list">
+            <div class="list-group-item col-lg-6" data-tags="site,setup,.net,lamp">
+                <div class="row-action-primary">
+                    <a href="site-setup.html" title="Site Setup"><i class="mdi-file-folder"></i></a>
+                </div>
+                <div class="row-content">
+                    <h4 class="list-group-item-heading">
+                        Site Setup</h4>
+                    <p class="list-group-item-text">
+                        Setup a new site in .Net and LAMP servers.</p>
+                </div>
+            </div>
+            <div class="list-group-item  col-lg-6" data-tags="users,user">
+                <div class="row-action-primary">
+                    <i class="mdi-file-folder"></i>
+                </div>
+                <div class="row-content">
+                    <h4 class="list-group-item-heading">
+                        Users</h4>
+                    <p class="list-group-item-text">
+                        Add, update or remove users.</p>
+                </div>
+            </div>
+            <div class="list-group-item  col-lg-6" data-tags="redirects">
+                <div class="row-action-primary">
+                    <i class="mdi-file-folder"></i>
+                </div>
+                <div class="row-content">
+                    <div class="action-secondary">
+                        <i class="mdi-material-info"></i>
+                    </div>
+                    <h4 class="list-group-item-heading">
+                        Redirects</h4>
+                    <p class="list-group-item-text">
+                        Manage redirects for your websites.</p>
+                </div>
+            </div>
+            <div class="list-group-item  col-lg-6" data-tags="lamp,publish">
+                <div class="row-action-primary">
+                    <i class="mdi-file-folder"></i>
+                </div>
+                <div class="row-content">
+                    <div class="action-secondary">
+                        <i class="mdi-material-info"></i>
+                    </div>
+                    <h4 class="list-group-item-heading">
+                        LAMP Publishing</h4>
+                    <p class="list-group-item-text">
+                        Publish files for your LAMP websites.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main Panel Ends -->
     <!-- Your site ends -->
     <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
     <script src="js/ripples.min.js" type="text/javascript"></script>
     <script src="js/material.min.js" type="text/javascript"></script>
-    <script>
+    <script type="text/javascript">
         $(document).ready(function () {
             $.material.init();
         });
     </script>
+    <script type="text/javascript" src="js/core.js"></script>
 </body>
 </html>

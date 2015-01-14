@@ -50,6 +50,18 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\material-wfont.min.css" />
+    <Content Include="css\material.min.css" />
+    <Content Include="css\ripples.min.css" />
+    <Content Include="fonts\Material-Design-Icons.svg" />
+    <Content Include="index.html" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\core.js" />
+    <Content Include="js\jquery-1.10.2.min.js" />
+    <Content Include="js\material.min.js" />
+    <Content Include="js\ripples.min.js" />
+    <Content Include="test.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -60,6 +72,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="css\material-wfont.min.css.map" />
+    <None Include="css\material.min.css.map" />
+    <None Include="css\ripples.min.css.map" />
+    <None Include="fonts\Material-Design-Icons.eot" />
+    <None Include="fonts\Material-Design-Icons.ttf" />
+    <None Include="fonts\Material-Design-Icons.woff" />
+    <None Include="js\material.min.js.map" />
+    <None Include="js\ripples.min.js.map" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

@@ -66,63 +66,58 @@
     <!-- Navigation Ends -->
     <!-- Main Panel Starts -->
     <div class="jumbotron" id="wrapper">
+        <h2>
+            Site Setup</h2>
+        <p>
+            Want to setup a new site in .Net or LAMP ?
+            <br />
+            If yes, simply fill in this questionnaire.</p>
+        <!-- App Form Starts -->
         <div class="panel panel-default">
-            <div class="panel-body">
-                <form class="apps-form search">
-                <input type="text" class="form-control col-lg-8 search" placeholder="Search" data-list="apps-list" />
-                </form>
-            </div>
+            <form id="msform">
+            <!-- progressbar -->
+            <ul id="progressbar">
+                <li class="active">Account Setup</li>
+                <li>Social Profiles</li>
+                <li>Personal Details</li>
+            </ul>
+            <!-- fieldsets -->
+            <fieldset>
+                <h2 class="fs-title">
+                    Create your account</h2>
+                <h3 class="fs-subtitle">
+                    This is step 1</h3>
+                <input type="text" name="email" placeholder="Email" />
+                <input type="password" name="pass" placeholder="Password" />
+                <input type="password" name="cpass" placeholder="Confirm Password" />
+                <input type="button" name="next" class="next action-button" value="Next" />
+            </fieldset>
+            <fieldset>
+                <h2 class="fs-title">
+                    Social Profiles</h2>
+                <h3 class="fs-subtitle">
+                    Your presence on the social network</h3>
+                <input type="text" name="twitter" placeholder="Twitter" />
+                <input type="text" name="facebook" placeholder="Facebook" />
+                <input type="text" name="gplus" placeholder="Google Plus" />
+                <input type="button" name="previous" class="previous action-button" value="Previous" />
+                <input type="button" name="next" class="next action-button" value="Next" />
+            </fieldset>
+            <fieldset>
+                <h2 class="fs-title">
+                    Personal Details</h2>
+                <h3 class="fs-subtitle">
+                    We will never sell it</h3>
+                <input type="text" name="fname" placeholder="First Name" />
+                <input type="text" name="lname" placeholder="Last Name" />
+                <input type="text" name="phone" placeholder="Phone" />
+                <textarea name="address" placeholder="Address"></textarea>
+                <input type="button" name="previous" class="previous action-button" value="Previous" />
+                <input type="submit" name="submit" class="submit action-button" value="Submit" />
+            </fieldset>
+            </form>
         </div>
-        <div class="list-group apps-list" id="apps-list">
-            <div class="list-group-item  col-lg-6" data-tags="lamp,publish">
-                <div class="row-action-primary">
-                    <a class="btn btn-primary btn-fab btn-raised mdi-content-send" href="javascript:void(0)"
-                        title="LAMP Publishing"></a>
-                </div>
-                <div class="row-content">
-                    <h4 class="list-group-item-heading">
-                        <b>LAMP Publishing</b></h4>
-                    <p class="list-group-item-text">
-                        Publish files for your LAMP websites.</p>
-                </div>
-            </div>
-            <div class="list-group-item  col-lg-6" data-tags="redirects">
-                <div class="row-action-primary">
-                    <a class="btn btn-primary btn-fab btn-raised mdi-action-autorenew" href="javascript:void(0)"
-                        title="Redirects"></a>
-                </div>
-                <div class="row-content">
-                    <h4 class="list-group-item-heading">
-                        <b>Redirects</b></h4>
-                    <p class="list-group-item-text">
-                        Manage redirects for your websites.</p>
-                </div>
-            </div>
-            <div class="list-group-item col-lg-6" data-tags="site,setup,.net,lamp">
-                <div class="row-action-primary">
-                    <a class="btn btn-primary btn-fab btn-raised mdi-social-public" href="site-setup.html"
-                        title="Site Setup"></a>
-                </div>
-                <div class="row-content">
-                    <h4 class="list-group-item-heading">
-                        <b>Site Setup</b></h4>
-                    <p class="list-group-item-text">
-                        Setup a new site in .Net and LAMP servers.</p>
-                </div>
-            </div>
-            <div class="list-group-item  col-lg-6" data-tags="users,user">
-                <div class="row-action-primary">
-                    <a class="btn btn-primary btn-fab btn-raised mdi-social-person" href="javascript:void(0)"
-                        title="LAMP Publishing"></a>
-                </div>
-                <div class="row-content">
-                    <h4 class="list-group-item-heading">
-                        <b>Users</b></h4>
-                    <p class="list-group-item-text">
-                        Add, update or remove users.</p>
-                </div>
-            </div>
-        </div>
+        <!-- App Form Ends -->
     </div>
     <!-- Main Panel Ends -->
     <!-- Your site ends -->
